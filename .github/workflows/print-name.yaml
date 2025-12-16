@@ -1,7 +1,8 @@
 workflow:
   name: print-name
   on: push
-    branches: main
+    branches: 
+      - main
   jobs:
     runs-on: ubuntu-latest
     steps:
