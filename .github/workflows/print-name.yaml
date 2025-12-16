@@ -1,10 +1,11 @@
-workflow:
-  name: print-name
-  on: push
-    branches: 
+name: print-name
+on: 
+ push:
+  branches: 
       - main
-  jobs:
-    runs-on: ubuntu-latest
-    steps:
-      - name: print message
-        run: echo "workflow executed successfully"
+jobs:
+ print-message:
+  runs-on: ubuntu-latest
+  steps:
+   - name: print message
+     run: echo "workflow executed successfully"
